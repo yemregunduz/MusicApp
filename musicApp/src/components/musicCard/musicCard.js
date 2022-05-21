@@ -5,21 +5,16 @@ const MusicCard = ({music}) =>{
     return (
 
         <View style={styles.container}>
-            <View > 
-              <Image style={styles.image} source={{uri:music.imageUrl}}></Image> 
-            </View>
+            <Image source={{uri:music.imageUrl}} style={styles.image}></Image>
             <View style={styles.innerContainer}>
                 <Text style={styles.title}>{music.title}</Text>
-                <View style={styles.infoContainer} >
-                    <View style={styles.descriptionContainer}>
-                        <Text style={styles.artist}>{music.artist}</Text>
-                        <Text style={styles.year}>{music.year}</Text>
-                    </View>
-                    {music.isSoldOut && <Text style={styles.soldOut}>TÜKENDİ</Text>}
-                </View>
+                <View style={styles.infoContainer}>
+                 <Text style={styles.artist}>{music.artist}</Text>
+                 <Text style={styles.year}>{music.year}</Text>
+                </View> 
+                <Text style={styles.album}>({music.album})</Text>
             </View>
-            
-
+            {music.isSoldOut && <Text style={styles.soldOut}>Tükendi</Text>}
         </View>
     )
 }

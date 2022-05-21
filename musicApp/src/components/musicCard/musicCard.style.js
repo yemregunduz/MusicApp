@@ -1,60 +1,55 @@
 import {StyleSheet,Dimensions} from 'react-native'
 
-const styles = StyleSheet.create({
+const styles=StyleSheet.create({
     container:{
-        backgroundColor:'white',
-        marginTop:10,
-        borderRadius:10,
-        flexDirection:'row',
-        marginBottom:10,
-        marginRight:10
-    },
-    innerContainer:{
-        flexDirection:'column',
-        flex:1,
-        justifyContent:'center'
+        flexDirection:"row",
+        padding:10,
+        backgroundColor:'white', 
     },
     image:{
-        height:80,
-        width: 80,
-        borderRadius:80,
-        marginRight:10
+        height:100,
+        width:100,
+        borderRadius:50,
+    },
+    innerContainer:{
+        padding:10,
+        justifyContent:'center',
+        flex:1,
+
     },
     title:{
         fontSize:20,
         color:'black',
-        fontWeight:'bold',
+        fontWeight:"800",
+        
+    },
+    infoContainer:{
+        flexDirection:"row",
     },
     artist:{
-        fontSize:13,
-        color:'black'
+        fontSize:17,
+        color:'black',
+        fontWeight:"600",
+        marginRight:6
     },
     year:{
-        fontSize:12,
-        marginLeft:5,
-        fontWeight:'500'
-    },
-    descriptionContainer:{
-        flexDirection:'row',
-        paddingTop:5,
-        paddingBottom:5,
-        
+        color:'#73777B',
+        fontWeight:"400"
     },
     soldOut:{
         borderWidth:1,
-        fontSize:14,
-        padding:5,
-        borderRadius:10,
-        textAlign:'center',
+        alignSelf:"flex-start",
+        borderColor:'red',
         color:'red',
-        borderColor:'red'
+        paddingLeft:5,
+        paddingRight:5,
+        borderRadius:5
     },
-    infoContainer:{
-        flexDirection:'row',
-        justifyContent:'space-between'
+    album:{
+        fontSize:15,
+        fontWeight:"bold"
     }
 
 })
-
 
 export default styles;

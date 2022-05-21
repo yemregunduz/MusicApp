@@ -30,17 +30,13 @@ const App = () =>{
   )
 }
 
-const styles = StyleSheet.create({
+const styles=StyleSheet.create({
   container:{
-    backgroundColor:'white',
-    paddingRight:10,
-    paddingLeft:10,
     flex:1
   },
-  seperator:{
-    borderWidth:1,
+  seperatorItem:{
+    borderWidth:0.5,
     borderColor:'#e0e0e0',
-    marginRight:10
   }
 })
 
